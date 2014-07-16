@@ -1,6 +1,6 @@
 {
-    "port": 4000,
-    "livereload": 35730,
+    "port": "<%= localPort %>",
+    "livereload": "<%= livereloadPort %>",
     "buildPath": "<%= buildDir %>/www",
     "contentDir": "<%= contentDir %>",
     "dataPath": "<%= buildDir %>/data.json",

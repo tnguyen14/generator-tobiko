@@ -24,6 +24,14 @@ var TobikoGenerator = yeoman.generators.Base.extend({
     this.log(yosay('Welcome to the marvelous Tobiko generator!'));
 
     var prompts = [{
+      name: 'localPort',
+      message: 'How port would you like your app to run on locally?',
+      default: 4000
+    }, {
+      name: 'livereloadPort',
+      message: 'How port would you like livereload to listen on?',
+      default: 35730
+    },{
       name: 'contentDir',
       message: 'How would you like to name the content directory?',
       default: 'contents'
@@ -56,6 +64,8 @@ var TobikoGenerator = yeoman.generators.Base.extend({
       this.templatesHelpersDir = props.templatesHelpersDir;
       this.buildDir = props.buildDir;
       this.sassDir = props.sassDir;
+      this.localPort = props.localPort;
+      this.livereloadPort = props.livereloadPort;
       done();
     }.bind(this));
   },
