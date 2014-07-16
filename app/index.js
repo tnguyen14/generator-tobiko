@@ -68,13 +68,6 @@ var TobikoGenerator = yeoman.generators.Base.extend({
     this.copy('gitignore', '.gitignore');
   },
 
-  dirs: function () {
-    this.mkdir('contents');
-    this.mkdir('js');
-    this.mkdir('scss');
-    this.mkdir('templates');
-  },
-
   tobiko: function () {
     this.mkdir('tobiko');
     this.template('_tobiko.json', 'tobiko.json');
@@ -91,13 +84,23 @@ var TobikoGenerator = yeoman.generators.Base.extend({
   },
 
   contents: function () {
+    this.mkdir('contents');
     this.copy('contents/index.json');
   },
 
   templates: function () {
+    this.mkdir('templates');
     this.copy('templates/index.hbs');
     this.directory('templates/helpers');
     this.directory('templates/partials');
+  },
+
+  styles: function () {
+    this.directory('scss');
+  },
+
+  scripts: function () {
+    this.mkdir('js');
   }
 
 });
