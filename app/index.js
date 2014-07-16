@@ -24,15 +24,38 @@ var TobikoGenerator = yeoman.generators.Base.extend({
     this.log(yosay('Welcome to the marvelous Tobiko generator!'));
 
     var prompts = [{
-      type: 'confirm',
-      name: 'someOption',
-      message: 'Would you like to enable this option?',
-      default: true
+      name: 'contentDir',
+      message: 'How would you like to name the content directory?',
+      default: 'contents'
+    }, {
+      name: 'templatesDir',
+      message: 'How would you like to name the templates directory?',
+      default: 'templates'
+    }, {
+      name: 'templatesPartialsDir',
+      message: 'How would you like to name the templates partials directory?',
+      default: 'partials'
+    }, {
+      name: 'templatesHelpersDir',
+      message: 'How would you like to name the templates helpers directory?',
+      default: 'helpers'
+    }, {
+      name: 'buildDir',
+      message: 'How would you like to name the build directory?',
+      default: 'build'
+    }, {
+      name: 'sassDir',
+      message: 'How would you like to name the sass partials directory?',
+      default: 'scss'
     }];
 
     this.prompt(prompts, function (props) {
-      this.someOption = props.someOption;
-
+      this.contentDir = props.contentDir;
+      this.templatesDir = props.templatesDir;
+      this.templatesPartialsDir = props.templatesPartialsDir;
+      this.templatesHelpersDir = props.templatesHelpersDir;
+      this.buildDir = props.buildDir;
+      this.sassDir = props.sassDir;
       done();
     }.bind(this));
   },

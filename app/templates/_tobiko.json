@@ -1,14 +1,14 @@
 {
     "port": 4000,
     "livereload": 35730,
-    "buildPath": "build/www",
-    "contentDir": "contents",
-    "dataPath": "build/data.json",
-    "sassDir": "scss",
+    "buildPath": "<%= buildDir %>/www",
+    "contentDir": "<%= contentDir %>",
+    "dataPath": "<%= buildDir %>/data.json",
+    "sassDir": "<%= sassDir %>",
     "templates": {
-        "dir": "templates",
-        "partialDir": "templates/partials",
-        "helperDir": "templates/helpers"
+        "dir": "<%= templatesDir %>",
+        "partialDir": "<%= templatesDir %>/<%= templatesPartialsDir %>",
+        "helperDir": "<%= templatesDir %>/<%= templatesHelpersDir %>"
     },
     "paginate": [
         {
