@@ -50,17 +50,18 @@ var TobikoGenerator = yeoman.generators.Base.extend({
     this.mkdir('js');
     this.mkdir('scss');
     this.mkdir('templates');
-    this.mkdir('tobiko');
   },
 
   tobiko: function() {
+    this.mkdir('tobiko');
     this.template('_tobiko.json', 'tobiko.json');
+    this.directory('tobiko/config', 'tobiko/config');
+    this.directory('tobiko/tasks', 'tobiko/tasks');
   },
 
   gruntfile: function () {
-    this.template('Gruntfile.js');
+    this.copy('Gruntfile.js');
   }
-
 
 });
 
