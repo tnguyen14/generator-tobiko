@@ -62,8 +62,19 @@ var TobikoGenerator = yeoman.generators.Base.extend({
   config: function () {
     this.template('_config.json', 'config.json');
   },
+
   gruntfile: function () {
     this.copy('Gruntfile.js');
+  },
+
+  contents: function () {
+    this.copy('contents/index.json');
+  },
+
+  templates: function () {
+    this.copy('templates/index.hbs');
+    this.directory('templates/helpers');
+    this.directory('templates/partials');
   }
 
 });

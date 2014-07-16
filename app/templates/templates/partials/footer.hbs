@@ -1,0 +1,11 @@
+        <footer class="main-footer">
+            Built by {{config.author}} using <a href="https://github.com/tnguyen14/tobiko">tobiko</a>. Copyrights ® {{getDate 'YYYY'}}.
+        </footer>
+
+        {{#isEqual content.env 'dev'}}
+            <script type="text/javascript" data-main="/js/config.js" src="/bower_components/requirejs/require.js"></script>
+        {{else}}
+            <script type="text/javascript" src="/app.js"></script>
+        {{/isEqual}}
+    </body>
+</html>
