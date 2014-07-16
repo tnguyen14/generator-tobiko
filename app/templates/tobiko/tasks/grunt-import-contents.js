@@ -6,7 +6,7 @@
 module.exports = function (grunt) {
 	var fs = require('fs'),
 		path = require('path'),
-		_ = grunt.util._,
+		_ = require('lodash'),
 		content = require('./lib/content').init(grunt);
 
 	// log colors

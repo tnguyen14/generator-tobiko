@@ -9,7 +9,7 @@ module.exports = function (grunt) {
 		path = require('path'),
 		moment = require('moment'),
 		Handlebars = require('handlebars'),
-		_ = grunt.util._;
+		_ = require('lodash');
 
 	// log colors
 	var red   = '\u001b[31m',
