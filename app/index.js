@@ -55,6 +55,10 @@ var TobikoGenerator = yeoman.generators.Base.extend({
 
   tobiko: function() {
     this.template('_tobiko.json', 'tobiko.json');
+  },
+
+  gruntfile: function () {
+    this.template('Gruntfile.js');
   }
 
 
