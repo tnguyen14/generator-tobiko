@@ -42,7 +42,22 @@ var TobikoGenerator = yeoman.generators.Base.extend({
     this.copy('_bower.json', 'bower.json');
     this.copy('editorconfig', '.editorconfig');
     this.copy('jshintrc', '.jshintrc');
+    this.copy('gitignore', '.gitignore');
+  },
+
+  dirs: function () {
+    this.mkdir('contents');
+    this.mkdir('js');
+    this.mkdir('scss');
+    this.mkdir('templates');
+    this.mkdir('tobiko');
+  },
+
+  tobiko: function() {
+    this.template('_tobiko.json', 'tobiko.json');
   }
+
+
 });
 
 module.exports = TobikoGenerator;
