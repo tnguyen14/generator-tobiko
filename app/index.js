@@ -25,11 +25,11 @@ var TobikoGenerator = yeoman.generators.Base.extend({
 
     var prompts = [{
       name: 'localPort',
-      message: 'How port would you like your app to run on locally?',
+      message: 'Which port would you like your app to run on locally?',
       default: 4000
     }, {
       name: 'livereloadPort',
-      message: 'How port would you like livereload to listen on?',
+      message: 'Which port would you like livereload to listen on?',
       default: 35730
     },{
       name: 'contentDir',
