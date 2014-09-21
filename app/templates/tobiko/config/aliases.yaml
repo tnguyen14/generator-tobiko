@@ -1,7 +1,7 @@
 process:
   - 'import_contents'
   - 'copy:build'
-  - 'handlebars_html:dev'
+  - 'generate_html:dev'
 dev:
   - 'process'
   - 'newer:imagemin:dev'
@@ -15,7 +15,7 @@ build:
   - 'newer:responsive_images'
   - 'newer:imagemin:build'
   - 'copy:build'
-  - 'handlebars_html:prod'
+  - 'generate_html:prod'
   - 'sass:prod'
   - 'autoprefixer'
   - 'csso:prod'
