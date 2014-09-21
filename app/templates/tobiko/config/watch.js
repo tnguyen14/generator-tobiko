@@ -1,6 +1,6 @@
 module.exports = {
 	options: {
-		livereload: '<%= livereload %>' || 35729
+		livereload: '<%= livereload %>' || 35730
 	},
 	css: {
 		files: ['<%= sassDir %>/**/*.scss'],
