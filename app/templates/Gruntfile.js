@@ -3,8 +3,6 @@
 module.exports = function(grunt) {
     var path = require('path'),
         tobiko = grunt.file.readJSON('tobiko.json');
-    // load local tasks
-    grunt.loadTasks('tobiko/tasks');
     // display execution time of grunt tasks
     require('time-grunt')(grunt);
     // load all grunt configs
