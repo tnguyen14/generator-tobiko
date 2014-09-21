@@ -110,7 +110,7 @@ var TobikoGenerator = yeoman.generators.Base.extend({
   },
 
   scripts: function () {
-    this.mkdir('js');
+    this.directory('js');
   }
 
 });
