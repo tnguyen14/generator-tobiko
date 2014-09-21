@@ -18,11 +18,4 @@ module.exports = function(grunt) {
             src: ['**/*']
         }
     });
-    grunt.config.set('copy', {
-        build: {
-            files: [
-                {expand: true, cwd: 'sass', src: 'assets/**/*', dest: '<%= buildPath %>/css/'}
-            ]
-        }
-    });
 }
