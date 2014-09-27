@@ -3,7 +3,7 @@
         </footer>
 
         {{#isEqual content.env 'dev'}}
-          <script src="http://localhost:35730/livereload.js"></script>
+          <script src="http://localhost:<%= livereloadPort %>/livereload.js"></script>
           <script type="text/javascript" data-main="js/config.js" src="bower_components/requirejs/require.js"></script>
         {{else}}
           <script type="text/javascript" src="app.js"></script>
