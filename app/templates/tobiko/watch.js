@@ -8,11 +8,11 @@ module.exports = {
 	},
 	contents: {
 		files: ['<%= contentDir %>/**/*.{json,md}'],
-		tasks: ['import_contents', 'handlebars_html:dev']
+		tasks: ['import_contents', 'generate_html:dev']
 	},
 	templates: {
 		files: ['<%= templates.dir %>/**/*.{hbs,html}'],
-		tasks: ['handlebars_html:dev']
+		tasks: ['generate_html:dev']
 	},
 	images: {
 		files: ['<%= contentDir %>/**/*.{jpg,png,gif}'],
