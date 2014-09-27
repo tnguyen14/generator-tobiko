@@ -81,8 +81,7 @@ var TobikoGenerator = yeoman.generators.Base.extend({
   tobiko: function () {
     this.mkdir('tobiko');
     this.template('_tobiko.json', 'tobiko.json');
-    this.directory('tobiko/config', 'tobiko/config');
-    this.directory('tobiko/tasks', 'tobiko/tasks');
+    this.directory('tobiko', 'tobiko');
   },
 
   config: function () {

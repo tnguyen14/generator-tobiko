@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     require('time-grunt')(grunt);
     // load all grunt configs
     require('load-grunt-config')(grunt, {
-        configPath: path.join(process.cwd(), 'tobiko/config'),
+        configPath: path.join(process.cwd(), 'tobiko'),
         config: tobiko
     });
     grunt.config.set('gh-pages', {
