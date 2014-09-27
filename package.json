@@ -1,6 +1,6 @@
 {
   "name": "generator-tobiko",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Yeoman generator for creating a tobiko static site generator project",
   "license": "MIT",
   "main": "app/index.js",
