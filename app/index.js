@@ -101,8 +101,8 @@ var TobikoGenerator = yeoman.generators.Base.extend({
     this.mkdir('templates');
     this.template('templates/index.hbs');
     this.template('templates/partials/footer.hbs');
+    this.copy('templates/partials/head.hbs');
     this.directory('templates/helpers');
-    this.directory('templates/partials');
   },
 
   styles: function () {
