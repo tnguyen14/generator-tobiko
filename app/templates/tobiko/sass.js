@@ -15,4 +15,4 @@ module.exports = {
 			'<%= buildPath %>/css/main.css': '<%= sassDir %>/main.scss'
 		}
 	}
-}
+};

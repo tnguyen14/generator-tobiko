@@ -15,4 +15,4 @@ module.exports = {
     src: '<%= contentDir %>/**/*.{json,md}',
     dest: '<%= dataPath %>'
   }
-}
+};

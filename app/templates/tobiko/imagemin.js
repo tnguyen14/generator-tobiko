@@ -10,4 +10,4 @@ module.exports = {
 			{expand: true, cwd: '<%= contentDir %>', src: '**/*.{jpg,png,gif}', dest: 'contents'}
 		]
 	}
-}
+};

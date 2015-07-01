@@ -26,4 +26,4 @@ module.exports = {
 		files: ['tobiko/**/*.{js,yaml}', 'Gruntfile.js'],
 		tasks: ['process']
 	}
-}
+};

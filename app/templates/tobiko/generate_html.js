@@ -9,4 +9,4 @@ module.exports = {
 		data: '<%= dataPath %>',
 	},
 	prod: '<%= generate_html.dev %>'
-}
+};

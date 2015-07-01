@@ -1,4 +1,6 @@
-module.exports = function(grunt){
+'use strict';
+
+module.exports = function(){
 	return {
 		dev: {
 			options: {
@@ -13,5 +15,5 @@ module.exports = function(grunt){
 				keepalive: true,
 			}
 		}
-	}
-}
+	};
+};
